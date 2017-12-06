@@ -1,0 +1,48 @@
+body {
+  background-color: #010101;
+  color: #fff;
+  font-family: 'Fira Mono', monospace;
+  /* Mini Reset */ }
+  body a {
+    text-decoration: none;
+    color: inherit; }
+  body ul li {
+    list-style: none; }
+  body h6 {
+    padding: 0;
+    margin: 0; }
+
+header {
+  width: 45vw;
+  margin: 0 auto;
+  text-align: center; }
+  header h1 {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    color: #04D15C;
+    font-size: 7em;
+    font-weight: lighter; }
+
+.search-container {
+  width: 45vw;
+  margin: 0 auto;
+  text-align: center; }
+  .search-container .search {
+    background-color: #4F4F4F;
+    color: #000;
+    padding: 2vh 2vw;
+    border-radius: 2px;
+    text-align: center;
+    border: 0px solid #010101; }
+
+.links {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25vh;
+  padding-top: 5vh;
+  font-size: 1.25em; }
+  .links ul {
+    margin-left: 15vw; }
+
+.weather {
+  background-color: #4f4f4f;
+  color: #000; }
