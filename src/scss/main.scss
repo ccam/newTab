@@ -19,7 +19,14 @@ body {
   }
   
 }
-
+.time-container {
+  font-size: .75em;
+  text-align: right;
+  
+  .dateTime {
+    font-size: .5rem;
+  }
+}
 header {
   width: 45vw;
   margin: 0 auto;
@@ -27,7 +34,7 @@ header {
   h1 {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
     color: #04D15C;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: lighter;
   }
 } 
@@ -44,6 +51,7 @@ header {
     border-radius: 2px;
     text-align: center;
     border: 0px solid #010101; 
+    box-shadow: -2px 2px 0px #fff;
   }
 }
 
@@ -53,14 +61,20 @@ header {
   grid-template-rows: 25vh;
 
   padding-top: 5vh;
-  font-size: 1.25em;
+  font-size: 1rem;
   ul {
     margin-left: 15vw;
   }
 }
 
 .notes {
+  .noteLeft {
+    width: 45vw;
+  }
 
+  .noteRight {
+    
+  }
 }
 
 .weather {
