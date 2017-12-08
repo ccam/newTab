@@ -45,7 +45,58 @@ noteBtn.addEventListener('click', () => {
 
 
 // WEATHER
-function getData(){
+function renderWeather(data) {
+  let cTemp = document.querySelector('.cTemp')
+  let cWind = document.querySelector('.cWind')
+  let cRain = document.querySelector('.cRain')
+  let theData = data.current_observation;
+  let cBG = document.querySelector('.current')
+  let weatherBG = theData.icon //theData.icon
+
+  console.log(weatherBG)
+
+// finish this out refer: https://api.wunderground.com/weather/api/d/docs?d=resources/phrase-glossary&MR=1
+
+
+  switch(weatherBG) {
+    case 'cloudy' :
+      cBG.style.backgroundImage = "url('./img/cloudy.gif')"
+      break
+    case 'mostlycloudy':
+      cBG.style.backgroundImage = "url('./img/cloudy.gif')"
+      break
+    case 'clear' || 'mostlysunny' || 'sunny':
+      cBG.style.backgroundImage = "url('./img/sunny.gif')"
+      break
+    default: 
+      cBG.style.backgroundImage = "url('../img/sunny.gif')"
+      console.log(';laksdjf')
+  }
+
+
+//ask reddit about switch vs if() in this situation.
+
+
+
+
+
+  cTemp.append(theData.temp_f + 'F')
+  cWind.append('Wind: ' + theData.wind_mph + 'MPH')
+  cRain.append('Precipitation: ' + theData.precip_today_in + 'in.')
+}
+
+function renderForecast(data) {
+  let theData = data.forecast
+  let card = document.querySelector('.card')
+  let img = document.createElement('img')
+  img.src = theData.simpleforecast.forecastday[0].icon_url
+
+  card.appendChild(img)
+  
+  console.log(theData)
+}
+
+function getWeather(){
   var xhr = new XMLHttpRequest();
   xhr.responseType = 'text';
   //replace github with 
@@ -55,9 +106,10 @@ function getData(){
     var data = JSON.parse(xhr.responseText);
 
     console.log(data)
-    //renderHTML(data);
+    renderWeather(data)
+    renderForecast(data)
   }
   xhr.send();
 };
-getData();
+getWeather();
 

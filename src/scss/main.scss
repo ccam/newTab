@@ -77,7 +77,21 @@ header {
   }
 }
 
+//     WEATHER
+
+
 .weather {
   background-color: #4f4f4f;
-  color: #000;
+  height: 50vh; /* REMOVE THIS LATER */
+
+  .cTemp {
+    font-size: 3rem;
+  }
+
+  .card {
+    border-radius: 3px;
+    border: 2px solid #333;
+    width: 25vw; 
+  
+  }
 }
