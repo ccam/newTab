@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Barcode+39+Extended+Text");
 body {
   background-color: #010101;
   color: #fff;
@@ -54,12 +55,21 @@ header {
   width: 45vw; }
 
 .weather {
-  background-color: #4f4f4f;
-  height: 50vh;
-  /* REMOVE THIS LATER */ }
+  display: grid;
+  grid-template-columns: 12.5vw  12.5vw  12.5vw  12.5vw  12.5vw;
+  grid-template-rows: 50vh; }
   .weather .cTemp {
-    font-size: 3rem; }
-  .weather .card {
+    font-size: 5rem; }
+  .weather .cWind, .weather .cRain {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .weather .cWind, .weather .cRain, .weather .cTemp {
+    -webkit-text-stroke: 1px black; }
+  .weather .card, .weather .fcard {
+    margin: 3vh 3vw;
     border-radius: 3px;
     border: 2px solid #333;
-    width: 25vw; }
+    width: 15vw;
+    height: 45vh;
+    background-size: cover;
+    background-repeat: no-repeat; }
