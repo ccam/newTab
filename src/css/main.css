@@ -45,12 +45,12 @@ header {
 
 .links {
   display: grid;
-  grid-template-columns: 16.5% 16.5% 16.5%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 25vh;
   padding-top: 5vh;
   font-size: 1rem; }
   .links ul {
-    margin-left: 15vw; }
+    margin-left: 12vw; }
 
 @media (max-width: 950px) and (min-width: 700px) {
   .links {

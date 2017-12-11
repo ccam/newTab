@@ -1,4 +1,4 @@
-https://www.npmjs.com/package/uglify-es
+//https://www.npmjs.com/package/uglify-es
 
 var gulp = require('gulp'),
 sass = require('gulp-sass'),

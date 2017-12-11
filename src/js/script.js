@@ -37,7 +37,7 @@ function displayTime() {
 };
 setInterval(displayTime, 1000);
 
-
+//SEARCH
 let search = document.querySelector('.search')
 search.addEventListener('keyup', (event) => {
   sendSearchReq(event)
@@ -45,7 +45,16 @@ search.addEventListener('keyup', (event) => {
 
 function sendSearchReq(event) {
   if(event.keyCode == 13) {
-    window.location = 'https://duckduckgo.com/?q=' + search.value
+    if(search.value =='yt') {
+      window.location = 'https://www.youtube.com/feed/subscriptions'
+
+    } else if ( search.value == 'fb') {
+      window.location = 'https://www.facebook.com/'
+      
+    } else {
+      window.location = 'https://duckduckgo.com/?q=' + search.value
+    }
+   
   }
 }
 
