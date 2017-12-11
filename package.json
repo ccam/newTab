@@ -2,23 +2,29 @@
   "name": "newtab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.3",
-    "gulp-sass": "^3.1.0",
-    "gulp-server-livereload": "^1.9.2",
-    "gulp-uglify": "^2.1.0",
-    "sass": "^0.5.0",
-    "uglify-es": "^3.2.2"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "pump": "^2.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccam/newTab.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccam/newTab/issues"
+  },
+  "homepage": "https://github.com/ccam/newTab#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "pump": "^2.0.0"
+  }
 }
