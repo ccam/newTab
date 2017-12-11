@@ -49,70 +49,46 @@ header {
   .search {
     background-color: #4F4F4F;
     color: #000;
-    padding: 2vh 2vw;
+    padding: 1vh 1vw;
+    height: 2rem;
+    width: 35vw;
     border-radius: 2px;
     text-align: center;
     border: 0px solid #010101; 
-    box-shadow: -2px 2px 0px #fff;
   }
 }
 
 .links {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 16.5% 16.5% 16.5%;
   grid-template-rows: 25vh;
-
   padding-top: 5vh;
+  
   font-size: 1rem;
   ul {
     margin-left: 15vw;
   }
 }
 
-.notes {
-  .noteLeft {
-    width: 45vw;
-  }
+@media (max-width: 950px) and (min-width: 700px) {
+  .links {
+    padding-left: 0;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 
-  .noteRight {
+    ul{
+      margin-left: 5vw;
+    }
+  }
+}
+
+@media (max-width: 699px) and (min-width: 300px) {
+  .links{
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding-left: 0;
     
+    ul {
+      margin-left: 3vw;
+    }
   }
 }
 
-//     WEATHER
-
-
-.weather {
-  display: grid;
-  grid-template-columns: 12.5vw  12.5vw  12.5vw  12.5vw  12.5vw; 
-  grid-template-rows: 50vh;
-
- 
-
-  .cTemp {
-    font-size: 5rem;
-  }
-  
-  .cWind, .cRain{
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .cWind, .cRain, .cTemp {
-    -webkit-text-stroke: 1px black;
-  }
-
-
-
-  .card, .fcard {
-    margin: 3vh 3vw;
-    border-radius: 3px;
-    border: 2px solid #333;
-    width: 15vw; 
-    height: 45vh;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-  
-  }
-}

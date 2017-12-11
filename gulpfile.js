@@ -1,7 +1,10 @@
+https://www.npmjs.com/package/uglify-es
+
 var gulp = require('gulp'),
 sass = require('gulp-sass'),
 cleanCSS = require('gulp-clean-css'),
 uglify = require('gulp-uglify'),
+pump = require('pump')
 server = require('gulp-server-livereload'),
 browserSync = require('browser-sync').create();
 
@@ -25,20 +28,20 @@ return gulp.src('./src/scss/main.scss')
 .pipe(browserSync.stream());
 });
 
-gulp.task('sass:watch', function() {
-
-});
-
-gulp.task('minify-css', function () {
+gulp.task('min-css', function () {
 return gulp.src('src/css/main.css')
 .pipe(cleanCSS({compatibility: 'ie8'}))
-.pipe(gulp.dest('docs/css'));
+.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('min-js', function () {
-return gulp.src('src/js/*.js')
-.pipe(uglify())
-.pipe(gulp.dest('docs/js'));
+gulp.task('min-js', function (cb) {
+  pump([
+        gulp.src('src/js/*.js'),
+        uglify(),
+        gulp.dest('dist/js')
+    ],
+    cb
+  );
 });
 
 gulp.task('server', function() {
@@ -51,5 +54,6 @@ port: 1337
 });
 
 gulp.task('main', ['serve'])
+gulp.task('build', ['min-css', 'min-js'])
 
 gulp.task('default', ['main']);

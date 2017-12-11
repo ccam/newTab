@@ -1,0 +1,37 @@
+//     WEATHER
+
+
+.weather {
+  display: grid;
+  grid-template-columns: 12.5vw  12.5vw  12.5vw  12.5vw  12.5vw; 
+  grid-template-rows: 50vh;
+
+ 
+
+  .cTemp {
+    font-size: 5rem;
+  }
+  
+  .cWind, .cRain{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .cWind, .cRain, .cTemp {
+    -webkit-text-stroke: 1px black;
+  }
+
+
+
+  .card, .fcard {
+    margin: 3vh 3vw;
+    border-radius: 3px;
+    border: 2px solid #333;
+    width: 15vw; 
+    height: 45vh;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+}
