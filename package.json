@@ -18,13 +18,14 @@
   "bugs": {
     "url": "https://github.com/ccam/newTab/issues"
   },
-  "homepage": "https://github.com/ccam/newTab#readme",
+  "homepage": "https://github.com/ccam/newTab",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-sass": "^3.1.0",
     "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^3.0.0",
     "pump": "^2.0.0"
   }
 }
