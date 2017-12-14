@@ -31,7 +31,7 @@ return gulp.src('./src/scss/main.scss')
 gulp.task('min-css', function () {
 return gulp.src('src/css/main.css')
 .pipe(cleanCSS({compatibility: 'ie8'}))
-.pipe(gulp.dest('dist/css'));
+.pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('min-js', function (cb) {

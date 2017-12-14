@@ -59,7 +59,7 @@ function sendSearchReq(event) {
       window.location = 'https://www.facebook.com/'
 
     } else {
-      window.location = 'https://duckduckgo.com/?q=' + search.value
+      window.location = 'https://searx.me/?q=' + search.value
     }
    
   }
