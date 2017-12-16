@@ -43,25 +43,7 @@ header {
     text-align: center;
     border: 0px solid #010101; }
 
-.links {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 25vh;
-  padding-top: 5vh;
-  font-size: 1rem; }
-  .links ul {
-    margin-left: 12vw; }
-
-@media (max-width: 950px) and (min-width: 700px) {
-  .links {
-    padding-left: 0;
-    grid-template-columns: 33.3% 33.3% 33.3%; }
-    .links ul {
-      margin-left: 5vw; } }
-
-@media (max-width: 699px) and (min-width: 300px) {
-  .links {
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    padding-left: 0; }
-    .links ul {
-      margin-left: 3vw; } }
+.guide {
+  width: 20vw;
+  margin: 0 auto;
+  padding: 3vh 0 0 10vw; }

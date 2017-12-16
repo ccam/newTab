@@ -49,18 +49,88 @@ function sendSearchReq(event) {
   let theTest = regex.test(search.value)
 
   if(event.keyCode == 13) {
+    if(theTest == true) {
+      window.location = 'http://' + search.value
+    }
+    
+    switch(search.value){
+      case 'yt':
+        window.location = 'https://www.youtube.com/feed/subscriptions'
+        break
+      case 'fb': 
+        window.location = 'https://www.facebook.com'
+        break
+      case 'git':
+        window.location = 'https://github.com/'
+        break
+      case 'can':
+        window.location = 'https://caniuse.com/'
+        break
+      case 'node':
+        window.location = 'https://nodejs.org/en/docs/'
+        break
+      case 'express':
+        window.location = 'https://expressjs.com/'
+        break
+      case 'mdn':
+        window.location = 'https://developer.mozilla.org/en-US/'
+        break
+      case 'vue':
+        window.location = 'https://vuejs.org/v2/api/'
+        break
+      case 'react':
+        window.location = 'https://reactjs.org/docs/hello-world.html'
+        break
+      case 'jq':
+        window.location = 'https://api.jquery.com/'
+        break
+      case 'npm':
+        window.location = 'https://www.npmjs.com/'
+        break
+      case 'maps':
+        window.location = 'https://www.google.com/maps/@40.8232987,-73.9418603,15z'
+        break
+      case 'net':
+        window.location = 'https://www.netflix.com/browse'
+        break
+      case 'w':
+        window.location = 'https://weather.com/'
+        break
+      default:
+      window.location = 'https://searx.me/?q=' + search.value
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+/*    
     if(theTest == true){
       window.location = 'http://'+ search.value
 
     } else if(search.value =='yt') {
-      window.location = 'https://www.youtube.com/feed/subscriptions'
 
-    } else if ( search.value == 'fb') {
+    } else if (search.value == 'fb') {
       window.location = 'https://www.facebook.com/'
 
+    } else if (search.value == 'm') {
+      window.location = 'https://www.messenger.com'
+
     } else {
-      window.location = 'https://searx.me/?q=' + search.value
+      
     }
-   
+   */
   }
 }
+
+
+
+
+
+/* TODO: 
+* change if else chain to switch. 
+* make key code chart for all shortcuts. 
+*/
