@@ -97,13 +97,13 @@ function sendSearchReq(event) {
         window.location = 'https://weather.com/'
         break
       case 'l80':
-        window.location = 'localhost:8000'
+        window.location = 'http://localhost:8000/'
         break
       case 'l88':
-        window.location = 'localhost:8080'
+        window.location = 'http://localhost:8080'
         break
       case 'l30':
-        window.location = 'localhost:3000'
+        window.location = 'http://localhost:3000'
         break
       default:
       window.location = 'https://searx.me/?q=' + search.value
