@@ -96,41 +96,17 @@ function sendSearchReq(event) {
       case 'w':
         window.location = 'https://weather.com/'
         break
+      case 'l80':
+        window.location = 'localhost:8000'
+        break
+      case 'l88':
+        window.location = 'localhost:8080'
+        break
+      case 'l30':
+        window.location = 'localhost:3000'
+        break
       default:
       window.location = 'https://searx.me/?q=' + search.value
     }
-    
-    
-    
-    
-    
-    
-    
-    
-/*    
-    if(theTest == true){
-      window.location = 'http://'+ search.value
-
-    } else if(search.value =='yt') {
-
-    } else if (search.value == 'fb') {
-      window.location = 'https://www.facebook.com/'
-
-    } else if (search.value == 'm') {
-      window.location = 'https://www.messenger.com'
-
-    } else {
-      
-    }
-   */
   }
 }
-
-
-
-
-
-/* TODO: 
-* change if else chain to switch. 
-* make key code chart for all shortcuts. 
-*/
