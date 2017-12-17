@@ -50,7 +50,7 @@ function sendSearchReq(event) {
 
   if(event.keyCode == 13) {
     if(theTest == true) {
-      window.location = 'http://' + search.value
+      return window.location = 'http://' + search.value
     }
     
     switch(search.value){
@@ -103,13 +103,30 @@ function sendSearchReq(event) {
         window.location = 'http://localhost:8080'
         break
       case 'l30':
-        window.location = 'localhost:3000'
+        window.location = 'http://localhost:3000'
         break
       case 'mess':
         window.location = 'https://www.messenger.com'
         break
+      case '4':
+        window.location = 'https://4chan.org/'
+        break
+      case '4g':
+        window.location = 'https://boards.4chan.org/g/'
+        break
+      case 'code':
+        window.location = 'https://codepen.io/#'
+        break
+      case 'st':
+        window.location = 'https://stackoverflow.com/'
+        break
+      case 'fig':
+        window.location = 'https://www.figma.com/files/recent'
+        break
+      case 'drib':
+        window.location = 'https://dribbble.com/'
       default:
-      window.location = 'https://searx.me/?q=' + search.value
+        window.location = 'https://searx.me/?q=' + search.value
     }
   }
 }

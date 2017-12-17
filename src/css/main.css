@@ -44,6 +44,9 @@ header {
     border: 0px solid #010101; }
 
 .guide {
-  width: 20vw;
+  display: flex;
   margin: 0 auto;
-  padding: 3vh 0 0 10vw; }
+  padding-left: 10vw; }
+  .guide .guide1, .guide .guide2, .guide .guide3 {
+    margin: 0 auto;
+    padding: 3vh 5vw 0 0; }
