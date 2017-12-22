@@ -126,7 +126,7 @@ function sendSearchReq(event) {
       case 'drib':
         window.location = 'https://dribbble.com/'
       default:
-        window.location = 'https://searx.me/?q=' + search.value
+        window.location = 'https://www.search404.io/?q=' + search.value
     }
   }
 }
